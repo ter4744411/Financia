@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.register{
+    font-family: "Kanit", sans-serif;
+    height: 99vh;
+    background-color: #181a20;
+    display: flex;
+    justify-content: center;
+    .container{
+        height: 720px;
+        width:1400px;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+        img{
+            height: 600px;
+            width: 350px;
+        }
+    }
+    .right,.right-error{
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 600px;
+        width:500px;
+        padding:0px 20px;
+        box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        .register-header{
+            color:#eaecef;
+            font-size: 40px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:15px;
+            .input-box{
+                align-items: center;
+                display: flex;
+                border:2px solid rgb(161, 161, 161);
+                height: 50px;
+                display: flex;
+                gap:10px;
+                width:300px;
+                padding-left: 20px;
+                input{
+                    color: white;
+                    border: none;
+                    background-color: transparent;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .form-icon{
+                    color: #f0b90b;
+                }
+            }
+            .input-img{
+                color:#eaecef;
+                display: flex;
+                gap:10px;
+                
+            }
+            
+            button{
+                display: flex;
+                gap:5px;
+                align-items: center;
+                padding:20px;
+                width:330px;
+                border-radius: 10px;
+                border: none;
+                justify-content: center;
+                background-color: #f0b90b;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    background-color: #d1a30a;
+                }
+            }
+            .error{
+                position: absolute;
+                bottom:160px;
+                background-color: red;
+                color:rgb(255, 255, 255);
+                padding: 0px 10px;
+                border-radius: 5px;
+                transition: background-color 0.5s ease-out, color 0.5s ease-out;
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+        .already-member{
+            gap:10px;
+            display: flex;
+            align-items: center;
+            color:#eaecef;
+            &:hover{
+                box-shadow:0 2px #f0b90b;
+                transition: 0.2s ease-out;
+            }
+        }
+        .login-footer{
+            text-align: center;
+            color:#eaecef;
+            width:350px;
+        }
+    }
+    .right-error{
+        box-shadow: rgba(255, 56, 56, 0.35) 0px 5px 30px;
+    }
+}

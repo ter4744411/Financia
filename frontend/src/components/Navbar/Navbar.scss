@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navbar{
+    position: sticky;
+    top: 0;
+    font-family: "Kanit", sans-serif;
+    background-color: #181a20;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px;
+    .nav-left{
+        margin-left: 40px;
+        display: flex;
+        gap:20px;
+        align-items: center;
+        .homelogo{
+            font-size: 20px;
+            font-weight: bold;
+            color:#e9b40b;
+            cursor: pointer;
+        }
+        .menu{
+            color:#eaecef;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover{
+                color:#f0b90b;
+            }
+        }
+    }
+    .nav-right{
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+        gap:20px;
+        font-size: 20px;
+        .menu-icon{
+            color:#eaecef;
+            cursor: pointer;
+            &:hover{
+                color:#f0b90b;
+            }
+        }
+        .login-btn{
+            font-family: "Kanit", sans-serif;
+            color:#eaecef;
+            background-color: #272c34;
+            border:none;
+            height: 30px;
+            width: 80px;
+            border-radius: 7px;
+            cursor: pointer;
+
+            &:hover{
+                color: #c9c9ca;
+                background-color:#20252b;
+                transition: 0.1s ease-out;
+            }
+        }
+        .signup-btn{
+            font-family: "Kanit", sans-serif;
+            background-color: #fcd535;
+            color:#282b35;
+            border:none;
+            height: 30px;
+            width: 80px;
+            border-radius: 7px;
+            cursor: pointer;
+
+            &:hover{
+                background-color:#c5a62a;
+                transition: 0.1s ease-out;
+            }
+        }
+        .nav-username{
+            font-size: 15px;
+            background-color: #fcd535;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    }
+}
